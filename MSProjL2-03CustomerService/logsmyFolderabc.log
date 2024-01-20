@@ -1,0 +1,40 @@
+2023-11-17 12:18:57.063  INFO [customer-service,,] 9816 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2023-11-17 12:18:59.228  INFO [customer-service,,] 9816 --- [main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=customer-service, profiles=[default], label=null, version=a4f16c0ed6f2b835953e6dc5a6a03a01606c9ab3, state=null
+2023-11-17 12:18:59.232  INFO [customer-service,,] 9816 --- [main] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://gitlab.com/neosoft6984917/msprojl2-03.git/application.properties'}]
+2023-11-17 12:18:59.275  INFO [customer-service,,] 9816 --- [main] c.n.MsProjL203CustomerServiceApplication : No active profile set, falling back to 1 default profile: "default"
+2023-11-17 12:19:01.451  INFO [customer-service,,] 9816 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=11a839fa-5f1e-3792-82af-637aaaee92fc
+2023-11-17 12:19:02.802  INFO [customer-service,,] 9816 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 4042 (http)
+2023-11-17 12:19:02.824  INFO [customer-service,,] 9816 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-17 12:19:02.825  INFO [customer-service,,] 9816 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-11-17 12:19:03.077  INFO [customer-service,,] 9816 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-17 12:19:03.077  INFO [customer-service,,] 9816 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3670 ms
+2023-11-17 12:19:05.800  INFO [customer-service,,] 9816 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'product-service' URL not provided. Will try picking an instance via load-balancing.
+2023-11-17 12:19:08.465  INFO [customer-service,,] 9816 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2023-11-17 12:19:09.491  WARN [customer-service,,] 9816 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-11-17 12:19:09.829  INFO [customer-service,,] 9816 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoint(s) beneath base path '/actuator'
+2023-11-17 12:19:09.992  INFO [customer-service,,] 9816 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-11-17 12:19:10.278  INFO [customer-service,,] 9816 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2023-11-17 12:19:10.305  INFO [customer-service,,] 9816 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-11-17 12:19:10.384  INFO [customer-service,,] 9816 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2023-11-17 12:19:10.385  INFO [customer-service,,] 9816 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2023-11-17 12:19:10.385  INFO [customer-service,,] 9816 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2023-11-17 12:19:10.386  INFO [customer-service,,] 9816 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2023-11-17 12:19:10.386  INFO [customer-service,,] 9816 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2023-11-17 12:19:10.387  INFO [customer-service,,] 9816 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2023-11-17 12:19:10.392  INFO [customer-service,,] 9816 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2023-11-17 12:19:11.220  INFO [customer-service,,] 9816 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2023-11-17 12:19:11.231  INFO [customer-service,,] 9816 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2023-11-17 12:19:11.241  INFO [customer-service,,] 9816 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-11-17 12:19:11.255  INFO [customer-service,,] 9816 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1700203751253 with initial instances count: 2
+2023-11-17 12:19:11.270  INFO [customer-service,,] 9816 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CUSTOMER-SERVICE with eureka with status UP
+2023-11-17 12:19:11.272  INFO [customer-service,,] 9816 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1700203751272, current=UP, previous=STARTING]
+2023-11-17 12:19:11.289  INFO [customer-service,,] 9816 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CUSTOMER-SERVICE/DESKTOP-K1UECL0:customer-service:4042: registering service...
+2023-11-17 12:19:11.377  INFO [customer-service,,] 9816 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 4042 (http) with context path ''
+2023-11-17 12:19:11.379  INFO [customer-service,,] 9816 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 4042
+2023-11-17 12:19:11.450  INFO [customer-service,,] 9816 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CUSTOMER-SERVICE/DESKTOP-K1UECL0:customer-service:4042 - registration status: 204
+2023-11-17 12:19:11.924  INFO [customer-service,,] 9816 --- [main] c.n.MsProjL203CustomerServiceApplication : Started MsProjL203CustomerServiceApplication in 16.891 seconds (JVM running for 17.736)
+2023-11-17 12:19:13.280  INFO [customer-service,53f02fd771e8fb43,53f02fd771e8fb43] 9816 --- [http-nio-4042-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-17 12:19:13.281  INFO [customer-service,53f02fd771e8fb43,53f02fd771e8fb43] 9816 --- [http-nio-4042-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-17 12:19:13.288  INFO [customer-service,53f02fd771e8fb43,53f02fd771e8fb43] 9816 --- [http-nio-4042-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-11-17 12:19:13.385  INFO [customer-service,53f02fd771e8fb43,53f02fd771e8fb43] 9816 --- [http-nio-4042-exec-3] c.neosoft.controller.CustomerController  : controller class of customer-service
+2023-11-17 12:20:59.893  INFO [customer-service,3a2f17ffb32980e2,3a2f17ffb32980e2] 9816 --- [http-nio-4042-exec-6] c.neosoft.controller.CustomerController  : controller class of customer-service

@@ -1,0 +1,39 @@
+2023-11-17 12:18:41.616  INFO [product-service,,] 10556 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2023-11-17 12:18:43.725  INFO [product-service,,] 10556 --- [main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=product-service, profiles=[default], label=null, version=a4f16c0ed6f2b835953e6dc5a6a03a01606c9ab3, state=null
+2023-11-17 12:18:43.730  INFO [product-service,,] 10556 --- [main] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://gitlab.com/neosoft6984917/msprojl2-03.git/application.properties'}]
+2023-11-17 12:18:43.795  INFO [product-service,,] 10556 --- [main] c.n.MsProjL203ProductServiceApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-11-17 12:18:45.765  INFO [product-service,,] 10556 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0f991fc3-2d11-35c9-8cbc-25a73019a69e
+2023-11-17 12:18:46.959  INFO [product-service,,] 10556 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 4041 (http)
+2023-11-17 12:18:46.977  INFO [product-service,,] 10556 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-17 12:18:46.978  INFO [product-service,,] 10556 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-11-17 12:18:47.258  INFO [product-service,,] 10556 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-17 12:18:47.259  INFO [product-service,,] 10556 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3370 ms
+2023-11-17 12:18:51.166  INFO [product-service,,] 10556 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2023-11-17 12:18:51.703  WARN [product-service,,] 10556 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-11-17 12:18:51.799  INFO [product-service,,] 10556 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoint(s) beneath base path '/actuator'
+2023-11-17 12:18:51.877  INFO [product-service,,] 10556 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-11-17 12:18:52.182  INFO [product-service,,] 10556 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2023-11-17 12:18:52.199  INFO [product-service,,] 10556 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-11-17 12:18:52.317  INFO [product-service,,] 10556 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2023-11-17 12:18:52.321  INFO [product-service,,] 10556 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2023-11-17 12:18:52.326  INFO [product-service,,] 10556 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2023-11-17 12:18:52.330  INFO [product-service,,] 10556 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2023-11-17 12:18:52.330  INFO [product-service,,] 10556 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2023-11-17 12:18:52.331  INFO [product-service,,] 10556 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2023-11-17 12:18:52.332  INFO [product-service,,] 10556 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2023-11-17 12:18:53.067  INFO [product-service,,] 10556 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2023-11-17 12:18:53.081  INFO [product-service,,] 10556 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2023-11-17 12:18:53.090  INFO [product-service,,] 10556 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-11-17 12:18:53.102  INFO [product-service,,] 10556 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1700203733100 with initial instances count: 2
+2023-11-17 12:18:53.121  INFO [product-service,,] 10556 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PRODUCT-SERVICE with eureka with status UP
+2023-11-17 12:18:53.159  INFO [product-service,,] 10556 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1700203733159, current=UP, previous=STARTING]
+2023-11-17 12:18:53.190  INFO [product-service,,] 10556 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PRODUCT-SERVICE/DESKTOP-K1UECL0:product-service:4041: registering service...
+2023-11-17 12:18:53.285  INFO [product-service,,] 10556 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 4041 (http) with context path ''
+2023-11-17 12:18:53.288  INFO [product-service,,] 10556 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 4041
+2023-11-17 12:18:53.336  INFO [product-service,,] 10556 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PRODUCT-SERVICE/DESKTOP-K1UECL0:product-service:4041 - registration status: 204
+2023-11-17 12:18:53.710  INFO [product-service,,] 10556 --- [main] c.n.MsProjL203ProductServiceApplication  : Started MsProjL203ProductServiceApplication in 14.139 seconds (JVM running for 15.021)
+2023-11-17 12:19:14.437  INFO [product-service,53f02fd771e8fb43,2c51cedc1cf83d1b] 10556 --- [http-nio-4041-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-17 12:19:14.438  INFO [product-service,53f02fd771e8fb43,2c51cedc1cf83d1b] 10556 --- [http-nio-4041-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-17 12:19:14.443  INFO [product-service,53f02fd771e8fb43,2c51cedc1cf83d1b] 10556 --- [http-nio-4041-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-11-17 12:19:14.541  INFO [product-service,53f02fd771e8fb43,2c51cedc1cf83d1b] 10556 --- [http-nio-4041-exec-3] c.neosoft.controller.ProductController   : controller of Product-Service
+2023-11-17 12:20:59.905  INFO [product-service,3a2f17ffb32980e2,e5a4a101a24620bc] 10556 --- [http-nio-4041-exec-1] c.neosoft.controller.ProductController   : controller of Product-Service
