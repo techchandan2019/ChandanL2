@@ -1,0 +1,63 @@
+package com.testmanytomany.testmapping.Entity;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+import java.util.ArrayList;
+import java.util.List;
+
+@Entity
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+public class Employee {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    private String name;
+
+    @ManyToMany(cascade = CascadeType.ALL)
+    @JoinTable(name = "employee_department", joinColumns = @JoinColumn(name = "employee_id") , inverseJoinColumns = @JoinColumn(name = "department_id"))
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
+    private List<Department> departments;
+}
+//==============================================
+package com.testmanytomany.testmapping.Entity;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.testmanytomany.testmapping.DepartmentName;
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+import java.util.List;
+
+@Entity
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+public class Department {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @Enumerated(EnumType.STRING)
+    private DepartmentName name;
+
+    @ManyToMany(mappedBy = "departments", cascade = CascadeType.ALL)
+    private List<Employee> employees;
+}
+
