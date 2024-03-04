@@ -1,0 +1,8 @@
+mutation AddEmp($empRequestDTO: EmpRequestDTO!){
+    addEmp(empRequestDTO: $empRequestDTO ) {
+		id
+		name
+		dept
+	
+    } 
+}

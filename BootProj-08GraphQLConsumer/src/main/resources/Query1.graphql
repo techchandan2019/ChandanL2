@@ -1,0 +1,8 @@
+query GetEmp1212($empId: Int!){
+    getEmp(empId: $empId ) {
+		id
+		name
+		dept
+	
+    } 
+}

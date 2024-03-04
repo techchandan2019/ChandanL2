@@ -1,0 +1,25 @@
+type Query{
+
+	getEmp(empId:Int):Employee
+	getEmpList:[Employee]
+}
+
+
+
+type Employee{
+ 
+ 	id:ID!
+ 	name: String
+ 	dept: String
+ 	
+}
+type Mutation{
+
+	addEmp(empRequestDTO:EmpRequestDTO):Employee
+	
+
+}
+input EmpRequestDTO{
+	name:String
+	dept:String
+}
