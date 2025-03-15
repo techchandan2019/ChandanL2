@@ -1,0 +1,13 @@
+com\nt\controller\LoginController.class
+com\nt\config\Oauth2Config.class
+com\nt\model\CustomUser.class
+com\nt\config\JpaAuthenticationProvider.class
+com\nt\model\UserInfo.class
+com\nt\config\SpringConfig.class
+com\nt\repository\RoleInfoRepo.class
+com\nt\SpringOuath2TestApplication.class
+com\nt\config\ResourceServerConfiguration.class
+com\nt\config\TokenAuthenticationFilter.class
+com\nt\repository\UserInfoRepo.class
+com\nt\model\Oauth2ConfigurationProperties.class
+com\nt\model\Role.class

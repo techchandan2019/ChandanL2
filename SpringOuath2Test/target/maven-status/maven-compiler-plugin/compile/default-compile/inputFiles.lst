@@ -1,0 +1,13 @@
+D:\Eclipse_Projects\SpringOuath2Test\src\main\java\com\nt\config\JpaAuthenticationProvider.java
+D:\Eclipse_Projects\SpringOuath2Test\src\main\java\com\nt\controller\LoginController.java
+D:\Eclipse_Projects\SpringOuath2Test\src\main\java\com\nt\config\Oauth2Config.java
+D:\Eclipse_Projects\SpringOuath2Test\src\main\java\com\nt\config\SpringConfig.java
+D:\Eclipse_Projects\SpringOuath2Test\src\main\java\com\nt\model\Oauth2ConfigurationProperties.java
+D:\Eclipse_Projects\SpringOuath2Test\src\main\java\com\nt\config\TokenAuthenticationFilter.java
+D:\Eclipse_Projects\SpringOuath2Test\src\main\java\com\nt\model\Role.java
+D:\Eclipse_Projects\SpringOuath2Test\src\main\java\com\nt\config\ResourceServerConfiguration.java
+D:\Eclipse_Projects\SpringOuath2Test\src\main\java\com\nt\SpringOuath2TestApplication.java
+D:\Eclipse_Projects\SpringOuath2Test\src\main\java\com\nt\model\UserInfo.java
+D:\Eclipse_Projects\SpringOuath2Test\src\main\java\com\nt\repository\RoleInfoRepo.java
+D:\Eclipse_Projects\SpringOuath2Test\src\main\java\com\nt\model\CustomUser.java
+D:\Eclipse_Projects\SpringOuath2Test\src\main\java\com\nt\repository\UserInfoRepo.java
